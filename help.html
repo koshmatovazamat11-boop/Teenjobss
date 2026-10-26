@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ответы на частые вопросы и контакты поддержки TeenJob.">
+  <meta name="theme-color" content="#6a3dff">
+  <title>Помощь · TeenJob</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236a3dff'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="help">
+<a class="skip" href="#main">К содержимому</a>
+<div class="topbar"><div class="container">
+  <span class="tb-left">🔒 Ищи подработку с умом · Не плати за трудоустройство</span>
+  <span class="lang" aria-label="Язык сайта"><b>RU</b><span title="Скоро">КЫР</span></span>
+</div></div>
+<header class="site-header"><div class="container header-inner">
+  <a class="logo" href="index.html" aria-label="TeenJob, на главную"><span class="logo-mark">T</span><span>Teen<span class="t">Job</span></span></a>
+  <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-wrap">☰</button>
+  <div class="nav-wrap" id="nav-wrap">
+    <nav class="nav" aria-label="Основное меню"><a class="link" href="jobs.html">Вакансии</a><a class="link" href="employers.html">Работодателям</a><a class="link" href="safety.html">Безопасность</a><a class="link" href="about.html">О проекте</a><a class="link active" href="help.html">Помощь</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost btn-sm" href="login.html">Войти</a>
+      <a class="btn btn-sm" href="register.html" data-register>Регистрация</a>
+      <a class="avatar-btn" href="profile.html" aria-label="Мой личный профиль" title="Мой профиль">👤</a>
+    </div>
+  </div>
+</div></header>
+<main id="main"><section class="section"><div class="container">
+<span class="eyebrow">💬 TeenJob Support</span><h1 class="h1">Помощь, которая отвечает по делу</h1>
+<p class="lead">Выбери ситуацию — бот подскажет следующий шаг. Это автоматические ответы, а не живой оператор.</p>
+<div class="grid g2 mt">
+ <article class="card help-action"><div class="icon-bubble">🧭</div><h2 class="h3">Найти первую подработку</h2><p>Подберём, с чего начать, если опыта пока нет.</p><button class="btn btn-ghost help-prompt" data-question="first-job">Подобрать первый шаг</button></article>
+ <article class="card help-action"><div class="icon-bubble">🚩</div><h2 class="h3">Кажется, это мошенничество</h2><p>Разберём красные флаги: предоплата, документы, подозрительные ссылки.</p><button class="btn btn-ghost help-prompt" data-question="scam">Проверить признаки риска</button></article>
+ <article class="card help-action"><div class="icon-bubble">💸</div><h2 class="h3">Неясна оплата</h2><p>Узнай, что нужно спросить до согласия на смену.</p><button class="btn btn-ghost help-prompt" data-question="pay">Разобраться с оплатой</button></article>
+ <article class="card help-action"><div class="icon-bubble">🧑‍💻</div><h2 class="h3">Проблема с сайтом</h2><p>Фильтры, регистрация или страница не открываются?</p><button class="btn btn-ghost help-prompt" data-question="site">Исправить проблему</button></article>
+</div>
+<div class="card mt chatbot" id="chatbot"><div class="chat-head"><div><span class="eyebrow">🤖 Помощник TeenJob</span><h2 class="h2">Привет! Что случилось?</h2></div><button type="button" class="btn btn-ghost btn-sm" id="chat-clear">Начать заново</button></div>
+<div class="chat-messages" id="chat-messages" role="log" aria-live="polite"><div class="chat-bubble bot">Я помогу разобраться с поиском работы, безопасностью, оплатой и сайтом. Не отправляй мне пароль, коды из SMS, адрес дома или фото документов.</div></div>
+<div class="chat-suggestions"><button class="chip" data-question="first-job">Я ищу первую работу</button><button class="chip" data-question="age">Мне 15 лет</button><button class="chip" data-question="scam">Это похоже на обман</button><button class="chip" data-question="pay">Как проверить оплату?</button></div>
+<form id="chat-form" class="chat-compose"><label class="sr-only" for="chat-input">Твой вопрос</label><input id="chat-input" type="text" maxlength="400" placeholder="Напиши вопрос своими словами…" autocomplete="off" required><button class="btn" type="submit">Отправить</button></form>
+<p class="small muted mt">Бот работает прямо в браузере и не использует ИИ-сервер. Если ситуация опасная — прекрати общение с работодателем и обратись к доверенному взрослому или в соответствующие службы.</p></div>
+<div class="card mt"><h2 class="h2">Быстрые ответы</h2><div class="faq mt">
+<details><summary>Можно ли работать с 15 лет?</summary><p>В Кыргызстане общий минимальный возраст приёма на работу — 16 лет. Для 15-летних закон предусматривает исключительные случаи; до отклика уточни условия оформления, разрешения и допустимые обязанности. Не соглашайся на опасную или ночную работу.</p></details>
+<details><summary>Нужно ли платить, чтобы получить работу?</summary><p>Нет. Не переводи деньги за «регистрацию», обучение, форму, пропуск или гарантию трудоустройства. Не сообщай коды из SMS и банковские данные.</p></details>
+<details><summary>Почему регистрация не создаёт настоящий аккаунт?</summary><p>Это демо-сайт без серверной базы и SMS-подтверждения. Формы показывают проверку данных в браузере, но не создают реальный аккаунт.</p></details>
+<details><summary>Где смотреть актуальные вакансии?</summary><p>На странице вакансий есть ссылки на оригинальные объявления внешних сайтов. Условия могут меняться — проверь их на источнике и уточни возраст у работодателя.</p></details>
+</div></div>
+</div></section></main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-cta">
+    <div><h3>Готов начать?</h3><p>Найди первую подработку или первых работников.</p></div>
+    <div class="cta-row"><a class="btn btn-white" href="jobs.html">Найти работу</a><a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="register.html#employer">Я работодатель</a></div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><span class="logo-mark">T</span><span>Teen<span class="t" style="color:#b9a4ff">Job</span></span></a>
+      <p>Первая работа без риска. Подработка для подростков 15–18 лет. Проверяй условия и береги свои данные.</p>
+      <div class="social"><a data-tg href="https://t.me/teenjob_support">Telegram</a><a href="mailto:team@teenjob.example">Почта</a></div>
+    </div>
+    <div><h4>Подросткам</h4><ul>
+      <li><a href="jobs.html">Вакансии</a></li>
+      <li><a href="register.html#teen">Регистрация</a></li>
+      <li><a href="profile.html">Мой профиль</a></li>
+      <li><a href="index.html#how">Как это работает</a></li></ul></div>
+    <div><h4>Работодателям</h4><ul>
+      <li><a href="employers.html#post">Разместить вакансию</a></li>
+      <li><a href="register.html#employer">Стать проверенным</a></li>
+      <li><a href="profile.html#employer">Кабинет работодателя</a></li></ul></div>
+    <div><h4>Помощь</h4><ul>
+      <li><a href="help.html">Частые вопросы</a></li>
+      <li><a data-tg href="https://t.me/teenjob_support">Написать в Telegram</a></li>
+      <li><a href="about.html">О проекте</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 TeenJob. Демо-версия студенческого проекта: вакансии, работодатели и платежи являются примерами и макетами.</span>
+    <nav aria-label="Правовая информация"><a href="safety.html">Безопасность</a><a href="about.html">О проекте</a></nav>
+  </div>
+</div></footer>
+<div class="modal" id="reg-modal" role="dialog" aria-modal="true" aria-labelledby="reg-title">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Закрыть">✕</button>
+    <h2 class="h2" id="reg-title">Кто ты?</h2>
+    <p class="muted">Выбери, и мы покажем нужную регистрацию.</p>
+    <div class="choice-grid">
+      <a class="choice" href="register.html#teen"><span class="big">🎒</span><b>Я ищу работу</b><span class="muted small">Мне 15–18 лет, хочу подработку</span></a>
+      <a class="choice" href="register.html#employer"><span class="big">🏪</span><b>Я работодатель</b><span class="muted small">Ищу ответственных подростков</span></a>
+    </div>
+    <p class="small muted mt">Уже есть профиль? <a href="login.html">Войти</a></p>
+  </div>
+</div>
+<a class="support-fab" href="help.html#chat" aria-label="Онлайн-помощь">💬 Помощь</a>
+
+<script src="script.js"></script>
+</body>
+</html>

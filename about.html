@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О проекте TeenJob: проблема, решение, чем мы отличаемся, план развития и команда.">
+  <meta name="theme-color" content="#6a3dff">
+  <title>О проекте · TeenJob</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236a3dff'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="about">
+<a class="skip" href="#main">К содержимому</a>
+<div class="topbar"><div class="container">
+  <span class="tb-left">🔒 Ищи подработку с умом · Не плати за трудоустройство</span>
+  <span class="lang" aria-label="Язык сайта"><b>RU</b><span title="Скоро">КЫР</span></span>
+</div></div>
+<header class="site-header"><div class="container header-inner">
+  <a class="logo" href="index.html" aria-label="TeenJob, на главную"><span class="logo-mark">T</span><span>Teen<span class="t">Job</span></span></a>
+  <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-wrap">☰</button>
+  <div class="nav-wrap" id="nav-wrap">
+    <nav class="nav" aria-label="Основное меню"><a class="link" href="jobs.html">Вакансии</a><a class="link" href="employers.html">Работодателям</a><a class="link" href="safety.html">Безопасность</a><a class="link active" href="about.html">О проекте</a><a class="link" href="help.html">Помощь</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost btn-sm" href="login.html">Войти</a>
+      <a class="btn btn-sm" href="register.html" data-register>Регистрация</a>
+      <a class="avatar-btn" href="profile.html" aria-label="Мой личный профиль" title="Мой профиль">👤</a>
+    </div>
+  </div>
+</div></header>
+<main id="main">
+<section class="hero" style="padding-bottom:32px">
+      <div class="container">
+        <h1>TeenJob: <em>первая работа без риска</em></h1>
+        <p class="sub">Студенческий проект колледжа для национальной программы: площадка для безопасной подработки подростков 15–18 лет.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid g2">
+          <div class="card"><h3>⚠️ Проблема</h3><p>Подростку 15–18 лет трудно найти работу: в обычных объявлениях много вакансий, на которые его не возьмут, и много обманов. Подростку важно заранее понимать обязанности, график и условия оплаты.</p></div>
+          <div class="card"><h3>💡 Решение</h3><p>Прототип помогает искать объявления, сравнивать условия и распознавать риски. Проверка работодателей, защищённая оплата и QR-учёт пока не реализованы.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="h2">Для кого сайт</h2>
+        <div class="grid g3">
+          <div class="card"><div class="icon-bubble">🎒</div><h3>Подростки 15–18</h3><p>Быстро найти подработку после уроков и без риска получить свои деньги.</p></div>
+          <div class="card"><div class="icon-bubble">🏪</div><h3>Работодатели</h3><p>Найти ответственных подростков, разместить вакансию за 2 минуты и не спорить об оплате.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="h2">Чем TeenJob отличается</h2>
+        <p class="lead">Сайты вакансий для всех возрастов не решают задач подростка. Мы решаем.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Что важно</th><th>Обычные сайты вакансий (как правило)</th><th>TeenJob</th></tr></thead>
+            <tbody>
+              <tr><td>Условия для возраста 15–18 лет</td><td class="no">нет</td><td class="yes">да</td></tr>
+              <tr><td>Проверка возраста и работодателя</td><td>не везде</td><td>планируется, пока вручную не выполняется</td></tr>
+              <tr><td>Оплата защищена через сайт</td><td>зависит от сервиса</td><td>пока нет — прототип</td></tr>
+              <tr><td>Смена по QR-коду и учёт времени</td><td>редко</td><td class="yes">да</td></tr>
+              <tr><td>Обучающее видео для каждой работы</td><td>редко</td><td class="yes">да</td></tr>
+              <tr><td>Приватность: друзья не узнают</td><td class="no">нет</td><td class="yes">да</td></tr>
+              <tr><td>Помощь с вопросами и безопасностью</td><td>зависит от сервиса</td><td class="yes">есть памятка и локальный чат-бот</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Когда проверите приложения «С учебы на работу», ishtapp, EasyTap, добавьте сюда
+             отдельную таблицу сравнения с честными данными из самих приложений. -->
+        <p class="small muted mt">В будущих версиях можно добавить подтверждение работодателей и инструменты контроля смен. Сейчас TeenJob — фронтенд-прототип без серверной проверки и платёжной системы.</p>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="h2">Как проходит смена</h2>
+        <ol class="steps" style="margin-top:18px">
+          <li><strong>Поиск</strong><span>Фильтры: регион, тип работы, время, смена и оплата. Есть и поиск по словам.</span></li>
+          <li><strong>Отклик</strong><span>Имя, возраст, телефон и фото. Данные видит только этот работодатель.</span></li>
+          <li><strong>Оплата защищена</strong><span>Работодатель вносит деньги заранее.</span></li>
+          <li><strong>Смена по QR-коду</strong><span>Работодатель сканирует код при приходе и при уходе.</span></li>
+          <li><strong>Выплата</strong><span>Деньги приходят в кабинет, вывод на карту в среду и субботу.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid g2">
+          <div class="card">
+            <h3>📣 Как люди узнают о сайте</h3>
+            <ul class="checks" style="margin-top:10px">
+              <li>QR-коды и рассказы в школах и колледжах</li>
+              <li>Короткие видео в Instagram и TikTok: «5 признаков фейковой вакансии»</li>
+              <li>Telegram-канал с новыми вакансиями</li>
+              <li>Родительские чаты и группы</li>
+              <li>Кафе, магазины и курьерские службы рядом с колледжами</li>
+              <li>Поиск по запросам вроде «работа с 16 лет»</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>📊 Как мы измерим успех</h3>
+            <ul class="checks" style="margin-top:10px">
+              <li>Число проверенных работодателей и вакансий</li>
+              <li>Число откликов и принятых подростков</li>
+              <li>Сколько смен выполнено и сколько денег выплачено</li>
+              <li>Доля жалоб и скорость их разбора</li>
+              <li>Сколько посетителей дошли от главной до отклика</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <h2 class="h2">План развития</h2>
+        <div class="grid g3">
+          <div class="card"><span class="badge ok">Первый тур (сейчас)</span><h3 style="margin-top:10px">Идея и макет</h3><p>Главная, поиск и фильтры, страница смены, экраны регистрации, кабинета, QR-кода и выплат.</p></div>
+          <div class="card"><span class="badge">Следующий этап</span><h3 style="margin-top:10px">Рабочая версия</h3><p>Настоящая регистрация и проверка, база вакансий, отклики, кабинет работодателя, видео-обучение.</p></div>
+          <div class="card"><span class="badge">Потом</span><h3 style="margin-top:10px">Платежи и рост</h3><p>Подключение платёжного сервиса, комиссия с работодателя за защиту оплаты, кыргызский язык, все регионы.</p></div>
+        </div>
+        <div class="notice mt"><span>⚠️</span><span>До запуска нужно уточнить: трудовые нормы для подростков, хранение чужих денег и платежи через лицензированный сервис, правила хранения персональных данных, налоги работодателей.</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="h2">Команда</h2>
+        <p class="lead">Студенты колледжа. Замените имена и добавьте фото.</p>
+        <div class="grid g4">
+          <div class="card center"><div class="icon-bubble" style="margin:0 auto 10px">👤</div><h3>Имя Фамилия</h3><p>Руководитель проекта</p></div>
+          <div class="card center"><div class="icon-bubble" style="margin:0 auto 10px">👤</div><h3>Имя Фамилия</h3><p>Аналитик</p></div>
+          <div class="card center"><div class="icon-bubble" style="margin:0 auto 10px">👤</div><h3>Имя Фамилия</h3><p>Дизайнер</p></div>
+          <div class="card center"><div class="icon-bubble" style="margin:0 auto 10px">👤</div><h3>Имя Фамилия</h3><p>Разработчик сайта</p></div>
+        </div>
+        <p class="mt center"><a class="btn" href="help.html">Связаться с командой</a></p>
+      </div>
+    </section>
+</main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-cta">
+    <div><h3>Готов начать?</h3><p>Найди первую подработку или первых работников.</p></div>
+    <div class="cta-row"><a class="btn btn-white" href="jobs.html">Найти работу</a><a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="register.html#employer">Я работодатель</a></div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><span class="logo-mark">T</span><span>Teen<span class="t" style="color:#b9a4ff">Job</span></span></a>
+      <p>Первая работа без риска. Подработка для подростков 15–18 лет. Проверяй условия и береги свои данные.</p>
+      <div class="social"><a data-tg href="https://t.me/teenjob_support">Telegram</a><a href="mailto:team@teenjob.example">Почта</a></div>
+    </div>
+    <div><h4>Подросткам</h4><ul>
+      <li><a href="jobs.html">Вакансии</a></li>
+      <li><a href="register.html#teen">Регистрация</a></li>
+      <li><a href="profile.html">Мой профиль</a></li>
+      <li><a href="index.html#how">Как это работает</a></li></ul></div>
+    <div><h4>Работодателям</h4><ul>
+      <li><a href="employers.html#post">Разместить вакансию</a></li>
+      <li><a href="register.html#employer">Стать проверенным</a></li>
+      <li><a href="profile.html#employer">Кабинет работодателя</a></li></ul></div>
+    <div><h4>Помощь</h4><ul>
+      <li><a href="help.html">Частые вопросы</a></li>
+      <li><a data-tg href="https://t.me/teenjob_support">Написать в Telegram</a></li>
+      <li><a href="about.html">О проекте</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 TeenJob. Демо-версия студенческого проекта: вакансии, работодатели и платежи являются примерами и макетами.</span>
+    <nav aria-label="Правовая информация"><a href="safety.html">Безопасность</a><a href="about.html">О проекте</a></nav>
+  </div>
+</div></footer>
+<div class="modal" id="reg-modal" role="dialog" aria-modal="true" aria-labelledby="reg-title">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Закрыть">✕</button>
+    <h2 class="h2" id="reg-title">Кто ты?</h2>
+    <p class="muted">Выбери, и мы покажем нужную регистрацию.</p>
+    <div class="choice-grid">
+      <a class="choice" href="register.html#teen"><span class="big">🎒</span><b>Я ищу работу</b><span class="muted small">Мне 15–18 лет, хочу подработку</span></a>
+      <a class="choice" href="register.html#employer"><span class="big">🏪</span><b>Я работодатель</b><span class="muted small">Ищу ответственных подростков</span></a>
+    </div>
+    <p class="small muted mt">Уже есть профиль? <a href="login.html">Войти</a></p>
+  </div>
+</div>
+<a class="support-fab" href="help.html#chat" aria-label="Онлайн-помощь">💬 Помощь</a>
+<script src="script.js"></script>
+</body>
+</html>

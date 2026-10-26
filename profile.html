@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Личный профиль на TeenJob: данные, смены, выплаты, приватность и проверка для подростка и работодателя.">
+  <meta name="theme-color" content="#6a3dff">
+  <title>Личный профиль · TeenJob</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236a3dff'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="profile">
+<a class="skip" href="#main">К содержимому</a>
+<div class="topbar"><div class="container">
+  <span class="tb-left">🔒 Ищи подработку с умом · Не плати за трудоустройство</span>
+  <span class="lang" aria-label="Язык сайта"><b>RU</b><span title="Скоро">КЫР</span></span>
+</div></div>
+<header class="site-header"><div class="container header-inner">
+  <a class="logo" href="index.html" aria-label="TeenJob, на главную"><span class="logo-mark">T</span><span>Teen<span class="t">Job</span></span></a>
+  <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-wrap">☰</button>
+  <div class="nav-wrap" id="nav-wrap">
+    <nav class="nav" aria-label="Основное меню"><a class="link" href="jobs.html">Вакансии</a><a class="link" href="employers.html">Работодателям</a><a class="link" href="safety.html">Безопасность</a><a class="link" href="about.html">О проекте</a><a class="link" href="help.html">Помощь</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost btn-sm" href="login.html">Войти</a>
+      <a class="btn btn-sm" href="register.html" data-register>Регистрация</a>
+      <a class="avatar-btn" href="profile.html" aria-label="Мой личный профиль" title="Мой профиль">👤</a>
+    </div>
+  </div>
+</div></header>
+<main id="main">
+<div class="demo-bar">Макет профиля: данные, суммы и смены показаны для примера</div>
+<div class="profile-cover"></div>
+<section style="padding-top:0">
+  <div class="container">
+    <div class="role-switch" style="margin-top:18px" role="tablist" aria-label="Тип профиля">
+      <button class="tab active" data-role="teen" role="tab" aria-selected="true">🎒 Профиль подростка</button>
+      <button class="tab" data-role="employer" role="tab" aria-selected="false">🏪 Профиль работодателя</button>
+    </div>
+
+    <!-- ===== Подросток ===== -->
+    <div class="role-view active" id="view-teen">
+      <div class="profile-layout" style="margin-top:0">
+        <aside class="card profile-side">
+          <div class="avatar-lg">А</div>
+          <h2 class="side-name">Айбек</h2>
+          <p class="muted small">17 лет · Бишкек</p>
+          <div class="chips-center"><span class="badge ok">✅ Возраст подтверждён</span><span class="badge">🔒 Профиль скрыт</span></div>
+          <p class="small" style="text-align:left"><b>Профиль заполнен: <span id="pct">70%</span></b></p>
+          <div class="progress"><i id="bar" style="width:70%"></i></div>
+          <div class="side-menu">
+            <button class="active" data-panel="t-profile">👤 Мой профиль</button>
+            <button data-panel="t-shifts">📅 Мои смены</button>
+            <button data-panel="t-pay">💸 Выплаты и QR-код</button>
+            <button data-panel="t-privacy">🔒 Приватность</button>
+            <button data-panel="t-verify">✅ Проверка</button>
+          </div>
+        </aside>
+
+        <div class="profile-main">
+          <div class="panel active" id="t-profile">
+            <div class="card">
+              <h2>Личные данные</h2>
+              <form class="form" id="teen-form" data-mock="Макет: изменения не сохраняются, это пример.">
+                <div class="grid g2">
+                  <div><label class="lbl" for="p-name">Имя</label><input id="p-name" type="text" value="Айбек"><p class="hint">Фамилию указывать необязательно.</p></div>
+                  <div><label class="lbl" for="p-birth">Дата рождения</label><input id="p-birth" type="date" value="2009-03-15"></div>
+                </div>
+                <div class="grid g2">
+                  <div><label class="lbl" for="p-region">Регион</label><select id="p-region"></select></div>
+                  <div><label class="lbl" for="p-phone">Телефон</label><input id="p-phone" type="text" value="+996 7•• ••• •42" readonly><p class="hint">Номер подтверждён по SMS.</p></div>
+                </div>
+                <div><label class="lbl" for="p-about">Коротко о себе</label><textarea id="p-about" placeholder="Например: учусь в колледже, общительный, быстро учусь">Учусь в колледже, общительный и быстро учусь. Могу работать после уроков.</textarea></div>
+                <div>
+                  <span class="lbl" style="font-weight:700;font-size:.92rem;display:block;margin-bottom:6px">Что умею</span>
+                  <div class="pick-row">
+                    <label class="pick"><input type="checkbox" checked><span>🗣 Общительный</span></label>
+                    <label class="pick"><input type="checkbox" checked><span>🇰🇬 Кыргызский</span></label>
+                    <label class="pick"><input type="checkbox" checked><span>🇷🇺 Русский</span></label>
+                    <label class="pick"><input type="checkbox"><span>🇬🇧 Английский</span></label>
+                    <label class="pick"><input type="checkbox"><span>🧾 Работа с кассой</span></label>
+                    <label class="pick"><input type="checkbox"><span>🛴 Есть самокат или велосипед</span></label>
+                    <label class="pick"><input type="checkbox"><span>💻 Уверенный пользователь телефона</span></label>
+                  </div>
+                </div>
+                <div>
+                  <span class="lbl" style="font-weight:700;font-size:.92rem;display:block;margin-bottom:6px">Когда могу работать</span>
+                  <div class="table-wrap"><table class="avail"><thead><tr><th></th><th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th><th>Вс</th></tr></thead><tbody><tr><td>Утро</td><td><input type="checkbox" aria-label="Утро, Пн"></td><td><input type="checkbox" aria-label="Утро, Вт"></td><td><input type="checkbox" aria-label="Утро, Ср"></td><td><input type="checkbox" aria-label="Утро, Чт"></td><td><input type="checkbox" aria-label="Утро, Пт"></td><td><input type="checkbox" aria-label="Утро, Сб"></td><td><input type="checkbox" aria-label="Утро, Вс"></td></tr><tr><td>День</td><td><input type="checkbox" aria-label="День, Пн"></td><td><input type="checkbox" aria-label="День, Вт"></td><td><input type="checkbox" aria-label="День, Ср"></td><td><input type="checkbox" aria-label="День, Чт"></td><td><input type="checkbox" aria-label="День, Пт"></td><td><input type="checkbox" aria-label="День, Сб" checked></td><td><input type="checkbox" aria-label="День, Вс" checked></td></tr><tr><td>Вечер</td><td><input type="checkbox" aria-label="Вечер, Пн" checked></td><td><input type="checkbox" aria-label="Вечер, Вт" checked></td><td><input type="checkbox" aria-label="Вечер, Ср" checked></td><td><input type="checkbox" aria-label="Вечер, Чт" checked></td><td><input type="checkbox" aria-label="Вечер, Пт" checked></td><td><input type="checkbox" aria-label="Вечер, Сб"></td><td><input type="checkbox" aria-label="Вечер, Вс"></td></tr></tbody></table></div>
+                </div>
+                <div><label class="lbl" for="p-photo">Фото профиля</label><input id="p-photo" type="file" accept="image/*"><p class="hint">Фото увидит только работодатель, которому ты откликнулся.</p></div>
+                <button class="btn" type="submit">Сохранить</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel" id="t-shifts">
+            <div class="card">
+              <h2>Ближайшая смена</h2>
+              <ul class="status-list">
+                <li><span class="icon-bubble">☕</span><div><b>Помощник в кафе</b><small>Завтра, 16:00–21:00 · Кофейня «Пример», Бишкек</small></div></li>
+              </ul>
+              <p class="mt"><a class="btn btn-sm" href="job.html?id=2">Открыть страницу смены</a></p>
+            </div>
+            <div class="card">
+              <h2>История смен</h2>
+              <div class="table-wrap"><table>
+                <thead><tr><th>Дата</th><th>Смена</th><th>Сумма</th><th>Статус</th></tr></thead>
+                <tbody>
+                  <tr><td>18.10</td><td>Помощник в кафе</td><td>1 100 сом</td><td><span class="badge ok">Выплачено</span></td></tr>
+                  <tr><td>20.10</td><td>Пеший курьер</td><td>900 сом</td><td><span class="badge ok">Выплачено</span></td></tr>
+                  <tr><td>22.10</td><td>Промоутер</td><td>800 сом</td><td><span class="badge warn">Ждёт выплаты</span></td></tr>
+                  <tr><td>23.10</td><td>Помощник в кафе</td><td>700 сом</td><td><span class="badge warn">Ждёт выплаты</span></td></tr>
+                </tbody>
+              </table></div>
+            </div>
+          </div>
+
+          <div class="panel" id="t-pay">
+            <div class="grid g2">
+              <div class="balance">
+                <p>Заработано</p>
+                <p class="sum">3 500 сом</p>
+                <p style="opacity:.9;margin:8px 0 16px">Ближайшая выплата: <b>среда</b></p>
+                <button class="btn" data-withdraw>Вывести на карту</button>
+              </div>
+              <div class="qr-box">
+                <h3>Мой QR-код на смену</h3>
+                <div id="qr"></div>
+                <p id="qr-state" class="muted small">Покажи его работодателю в начале и в конце смены.</p>
+                <p class="mt"><button class="btn btn-ghost btn-sm" id="qr-btn" type="button">Макет: начать смену</button></p>
+              </div>
+            </div>
+            <div class="card">
+              <h2>💳 Карта для выплат</h2>
+              <div class="form">
+                <div><label class="lbl" for="card">Номер карты или кошелька</label><input id="card" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000"></div>
+                <p class="hint">Если своей карты нет, позже можно будет указать кошелёк.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="t-privacy">
+            <div class="card">
+              <h2>Приватность</h2>
+              <label class="switch-row"><span><b>Профиль виден только работодателям, которым я откликнулся</b><span class="d">Всегда включено, это правило сайта.</span></span><input type="checkbox" checked disabled></label>
+              <label class="switch-row"><span><b>Скрывать фамилию</b><span class="d">Работодатель увидит только имя.</span></span><input type="checkbox" checked data-on="Фамилия скрыта." data-off="Фамилия видна работодателю."></label>
+              <label class="switch-row"><span><b>Уведомления в Telegram</b><span class="d">О новых вакансиях и выплатах.</span></span><input type="checkbox" data-on="Уведомления включены." data-off="Уведомления выключены."></label>
+            </div>
+            <div class="card">
+              <h2>Мои данные</h2>
+              <p>Ты можешь удалить профиль и все свои данные.</p>
+              <p class="mt"><button class="btn btn-danger" data-toast="Макет: в настоящей версии профиль и данные удаляются по запросу.">Удалить профиль</button></p>
+            </div>
+          </div>
+
+          <div class="panel" id="t-verify">
+            <div class="card">
+              <h2>Проверка профиля</h2>
+              <ul class="status-list">
+                <li><span class="icon-bubble">📱</span><div><b>Телефон</b><small>Подтверждён по SMS</small></div><span class="badge ok" style="margin-left:auto">✅ Готово</span></li>
+                <li><span class="icon-bubble">🪪</span><div><b>Возраст</b><small>Документ проверен, файл удалён</small></div><span class="badge ok" style="margin-left:auto">✅ Готово</span></li>
+                <li><span class="icon-bubble">📷</span><div><b>Фото профиля</b><small>Добавь фото, чтобы работодатель узнал тебя</small></div><span class="badge warn" style="margin-left:auto">⏳ Нужно фото</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Работодатель ===== -->
+    <div class="role-view" id="view-employer">
+      <div class="profile-layout" style="margin-top:0">
+        <aside class="card profile-side">
+          <div class="avatar-lg">К</div>
+          <h2 class="side-name">Кофейня «Пример»</h2>
+          <p class="muted small">Бишкек · Ленинский район</p>
+          <div class="chips-center"><span class="badge ok">✅ Проверенный работодатель</span></div>
+          <div class="side-menu">
+            <button class="active" data-panel="c-profile">🏪 Профиль компании</button>
+            <button data-panel="c-jobs">📋 Мои вакансии</button>
+            <button data-panel="c-resp">🙋 Отклики</button>
+            <button data-panel="c-pay">💸 Оплата</button>
+            <button data-panel="c-verify">✅ Проверка</button>
+          </div>
+        </aside>
+
+        <div class="profile-main">
+          <div class="panel active" id="c-profile">
+            <div class="card">
+              <h2>Данные компании</h2>
+              <form class="form" data-mock="Макет: изменения не сохраняются, это пример.">
+                <div><label class="lbl" for="c-name">Название места работы</label><input id="c-name" type="text" value="Кофейня «Пример»"></div>
+                <div class="grid g2">
+                  <div><label class="lbl" for="c-region">Регион</label><select id="c-region"></select></div>
+                  <div><label class="lbl" for="c-addr">Адрес</label><input id="c-addr" type="text" value="ул. Образцовая, 5 (демо)"></div>
+                </div>
+                <div class="grid g2">
+                  <div><label class="lbl" for="c-person">Контактное лицо</label><input id="c-person" type="text" value="Управляющий"></div>
+                  <div><label class="lbl" for="c-phone">Телефон</label><input id="c-phone" type="text" value="+996 5•• ••• •10" readonly></div>
+                </div>
+                <div><label class="lbl" for="c-hours">Часы работы</label><input id="c-hours" type="text" value="Ежедневно, 9:00–22:00"></div>
+                <div><label class="lbl" for="c-about">О нас</label><textarea id="c-about">Небольшая кофейня. Помогаем новичкам освоиться и всему обучаем.</textarea></div>
+                <div><label class="lbl" for="c-logo">Логотип или фото места</label><input id="c-logo" type="file" accept="image/*"></div>
+                <button class="btn" type="submit">Сохранить</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel" id="c-jobs">
+            <div class="card">
+              <h2>Мои вакансии</h2>
+              <div class="table-wrap"><table>
+                <thead><tr><th>Вакансия</th><th>Оплата</th><th>Откликов</th><th>Статус</th></tr></thead>
+                <tbody>
+                  <tr><td>Помощник в кафе</td><td>1 100 сом</td><td>2</td><td><span class="badge ok">Опубликована</span></td></tr>
+                  <tr><td>Раздатчик в зале</td><td>900 сом</td><td>0</td><td><span class="badge warn">На проверке</span></td></tr>
+                </tbody>
+              </table></div>
+              <p class="mt"><a class="btn" href="employers.html#post">Создать вакансию</a></p>
+            </div>
+          </div>
+
+          <div class="panel" id="c-resp">
+            <div class="card">
+              <h2>Отклики</h2>
+              <div class="table-wrap"><table>
+                <thead><tr><th>Имя</th><th>Возраст</th><th>Вакансия</th><th>Статус</th><th></th></tr></thead>
+                <tbody>
+                  <tr><td>👤 Айбек</td><td>17</td><td>Помощник в кафе</td><td class="status">Новый отклик</td><td><button class="btn btn-sm btn-ok" data-resp="yes">Пригласить</button> <button class="btn btn-sm btn-ghost" data-resp="no">Отказ</button></td></tr>
+                  <tr><td>👤 Айгерим</td><td>16</td><td>Помощник в кафе</td><td class="status">Новый отклик</td><td><button class="btn btn-sm btn-ok" data-resp="yes">Пригласить</button> <button class="btn btn-sm btn-ghost" data-resp="no">Отказ</button></td></tr>
+                </tbody>
+              </table></div>
+              <p class="small muted mt">Телефон подростка вы видите только после его отклика. Личные данные нельзя использовать вне работы.</p>
+            </div>
+          </div>
+
+          <div class="panel" id="c-pay">
+            <div class="grid g2">
+              <div class="balance">
+                <p>Депозит на сайте</p>
+                <p class="sum">5 000 сом</p>
+                <p style="opacity:.9;margin:8px 0 16px">Зарезервировано под смены: 2 200 сом</p>
+                <button class="btn" data-toast="Макет: пополнение будет подключено через платёжный сервис.">Пополнить</button>
+              </div>
+              <div class="card">
+                <h3>Как работает защита оплаты</h3>
+                <ol class="checks" style="list-style:none;padding:0;margin-top:10px">
+                  <li>Вы вносите деньги заранее</li>
+                  <li>Подросток сканирует QR на смене</li>
+                  <li>После смены оплата уходит ему</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="c-verify">
+            <div class="card">
+              <h2>Проверка работодателя</h2>
+              <ul class="status-list">
+                <li><span class="icon-bubble">📱</span><div><b>Телефон и почта</b><small>Подтверждены</small></div><span class="badge ok" style="margin-left:auto">✅ Готово</span></li>
+                <li><span class="icon-bubble">📄</span><div><b>Документ деятельности</b><small>ИП, патент или регистрация компании</small></div><span class="badge ok" style="margin-left:auto">✅ Готово</span></li>
+                <li><span class="icon-bubble">☎️</span><div><b>Звонок администратора</b><small>Проверка по номеру места работы</small></div><span class="badge ok" style="margin-left:auto">✅ Готово</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-cta">
+    <div><h3>Готов начать?</h3><p>Найди первую подработку или первых работников.</p></div>
+    <div class="cta-row"><a class="btn btn-white" href="jobs.html">Найти работу</a><a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="register.html#employer">Я работодатель</a></div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><span class="logo-mark">T</span><span>Teen<span class="t" style="color:#b9a4ff">Job</span></span></a>
+      <p>Первая работа без риска. Подработка для подростков 15–18 лет. Проверяй условия и береги свои данные.</p>
+      <div class="social"><a data-tg href="https://t.me/teenjob_support">Telegram</a><a href="mailto:team@teenjob.example">Почта</a></div>
+    </div>
+    <div><h4>Подросткам</h4><ul>
+      <li><a href="jobs.html">Вакансии</a></li>
+      <li><a href="register.html#teen">Регистрация</a></li>
+      <li><a href="profile.html">Мой профиль</a></li>
+      <li><a href="index.html#how">Как это работает</a></li></ul></div>
+    <div><h4>Работодателям</h4><ul>
+      <li><a href="employers.html#post">Разместить вакансию</a></li>
+      <li><a href="register.html#employer">Стать проверенным</a></li>
+      <li><a href="profile.html#employer">Кабинет работодателя</a></li></ul></div>
+    <div><h4>Помощь</h4><ul>
+      <li><a href="help.html">Частые вопросы</a></li>
+      <li><a data-tg href="https://t.me/teenjob_support">Написать в Telegram</a></li>
+      <li><a href="about.html">О проекте</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 TeenJob. Демо-версия студенческого проекта: вакансии, работодатели и платежи являются примерами и макетами.</span>
+    <nav aria-label="Правовая информация"><a href="safety.html">Безопасность</a><a href="about.html">О проекте</a></nav>
+  </div>
+</div></footer>
+<div class="modal" id="reg-modal" role="dialog" aria-modal="true" aria-labelledby="reg-title">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Закрыть">✕</button>
+    <h2 class="h2" id="reg-title">Кто ты?</h2>
+    <p class="muted">Выбери, и мы покажем нужную регистрацию.</p>
+    <div class="choice-grid">
+      <a class="choice" href="register.html#teen"><span class="big">🎒</span><b>Я ищу работу</b><span class="muted small">Мне 15–18 лет, хочу подработку</span></a>
+      <a class="choice" href="register.html#employer"><span class="big">🏪</span><b>Я работодатель</b><span class="muted small">Ищу ответственных подростков</span></a>
+    </div>
+    <p class="small muted mt">Уже есть профиль? <a href="login.html">Войти</a></p>
+  </div>
+</div>
+<a class="support-fab" href="help.html#chat" aria-label="Онлайн-помощь">💬 Помощь</a>
+<script src="script.js"></script>
+</body>
+</html>

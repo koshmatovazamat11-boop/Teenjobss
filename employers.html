@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TeenJob для работодателей: найдите ответственных подростков 15–18 лет на смены. Вакансия за 2 минуты, оплата защищена.">
+  <meta name="theme-color" content="#6a3dff">
+  <title>Работодателям · TeenJob</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236a3dff'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="employers">
+<a class="skip" href="#main">К содержимому</a>
+<div class="topbar"><div class="container">
+  <span class="tb-left">🔒 Ищи подработку с умом · Не плати за трудоустройство</span>
+  <span class="lang" aria-label="Язык сайта"><b>RU</b><span title="Скоро">КЫР</span></span>
+</div></div>
+<header class="site-header"><div class="container header-inner">
+  <a class="logo" href="index.html" aria-label="TeenJob, на главную"><span class="logo-mark">T</span><span>Teen<span class="t">Job</span></span></a>
+  <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-wrap">☰</button>
+  <div class="nav-wrap" id="nav-wrap">
+    <nav class="nav" aria-label="Основное меню"><a class="link" href="jobs.html">Вакансии</a><a class="link active" href="employers.html">Работодателям</a><a class="link" href="safety.html">Безопасность</a><a class="link" href="about.html">О проекте</a><a class="link" href="help.html">Помощь</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost btn-sm" href="login.html">Войти</a>
+      <a class="btn btn-sm" href="register.html" data-register>Регистрация</a>
+      <a class="avatar-btn" href="profile.html" aria-label="Мой личный профиль" title="Мой профиль">👤</a>
+    </div>
+  </div>
+</div></header>
+<main id="main">
+<div class="demo-bar">Макет: публикация вакансий и кабинет откликов показаны для примера</div>
+
+    <section class="hero" style="padding-bottom:32px">
+      <div class="container">
+        <h1>Найдите <em>ответственных подростков</em> на смены</h1>
+        <p class="sub">Вакансия за 2 минуты. Приходят отклики только от проверенных подростков 15–18 лет.</p>
+        <a class="btn btn-lg" href="register.html#employer">Стать проверенным работодателем</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="h2">Что вы получаете</h2>
+        <p class="lead">Меньше суеты с поиском и споров по оплате.</p>
+        <div class="grid g3">
+          <div class="card"><div class="icon-bubble">⏱</div><h3>Вакансия за 2 минуты</h3><p>Пять полей: должность, оплата, график, адрес и контакт.</p></div>
+          <div class="card"><div class="icon-bubble">✅</div><h3>Проверенные подростки</h3><p>Возраст подтверждён при регистрации. Вы видите имя, возраст и фото откликнувшихся.</p></div>
+          <div class="card"><div class="icon-bubble">📲</div><h3>QR-код вместо споров</h3><p>Смена начинается и заканчивается сканированием, а оплата считается по записанному времени.</p></div>
+          <div class="card"><div class="icon-bubble">💸</div><h3>Оплата защищена</h3><p>Вы вносите деньги заранее, а подросток получает их после смены. Обе стороны уверены друг в друге.</p></div>
+          <div class="card"><div class="icon-bubble">🏅</div><h3>Метка доверия</h3><p>Метка ✅ «Проверенный работодатель» повышает доверие подростков и соискателей.</p></div>
+          <div class="card"><div class="icon-bubble">📖</div><h3>Помощь с правилами</h3><p>Подсказки о том, какие виды работ и сколько часов допустимы для подростков.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container" style="max-width:820px">
+        <h2 class="h2" id="post">Разместить вакансию</h2>
+        <p class="lead">Макет формы. Публиковать вакансии смогут только проверенные работодатели.</p>
+        <div class="card">
+          <form class="form" data-mock>
+            <div><label class="lbl" for="e-title">Должность</label><input id="e-title" type="text" placeholder="Например, помощник в кафе" required></div>
+            <div class="grid g2">
+              <div><label class="lbl" for="e-type">Тип работы</label><select id="e-type" required></select></div>
+              <div><label class="lbl" for="e-region">Регион</label><select id="e-region" required></select></div>
+            </div>
+            <div class="grid g2">
+              <div><label class="lbl" for="e-pay">Оплата за смену, сом</label><input id="e-pay" type="number" min="0" step="50" placeholder="1000" required></div>
+              <div><label class="lbl" for="e-hours">Длина смены, часов</label><input id="e-hours" type="number" min="1" max="8" placeholder="4" required></div>
+            </div>
+            <div><label class="lbl" for="e-addr">Адрес</label><input id="e-addr" type="text" required></div>
+            <label class="check"><input type="checkbox" required> Подтверждаю: работа подходит для подростков 15–18 лет, деньги за трудоустройство не требуются.</label>
+            <button class="btn btn-lg" type="submit">Опубликовать</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="h2">Кабинет откликов</h2>
+        <p class="lead">Все отклики в одном списке. Пример:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Имя</th><th>Возраст</th><th>Вакансия</th><th>Статус</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>👤 Айбек</td><td>17</td><td>Помощник в кафе</td><td class="status">Новый отклик</td><td><button class="btn btn-sm btn-ok" data-resp="yes">Пригласить</button> <button class="btn btn-sm btn-ghost" data-resp="no">Отказ</button></td></tr>
+              <tr><td>👤 Айгерим</td><td>16</td><td>Помощник в кафе</td><td class="status">Новый отклик</td><td><button class="btn btn-sm btn-ok" data-resp="yes">Пригласить</button> <button class="btn btn-sm btn-ghost" data-resp="no">Отказ</button></td></tr>
+              <tr><td>👤 Нурлан</td><td>18</td><td>Пеший курьер</td><td class="status">Новый отклик</td><td><button class="btn btn-sm btn-ok" data-resp="yes">Пригласить</button> <button class="btn btn-sm btn-ghost" data-resp="no">Отказ</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="notice info mt"><span>ℹ️</span><span>Телефон подростка вы видите только после его отклика, а личные данные нельзя использовать вне работы.</span></div>
+      </div>
+    </section>
+</main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-cta">
+    <div><h3>Готов начать?</h3><p>Найди первую подработку или первых работников.</p></div>
+    <div class="cta-row"><a class="btn btn-white" href="jobs.html">Найти работу</a><a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="register.html#employer">Я работодатель</a></div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><span class="logo-mark">T</span><span>Teen<span class="t" style="color:#b9a4ff">Job</span></span></a>
+      <p>Первая работа без риска. Подработка для подростков 15–18 лет. Проверяй условия и береги свои данные.</p>
+      <div class="social"><a data-tg href="https://t.me/teenjob_support">Telegram</a><a href="mailto:team@teenjob.example">Почта</a></div>
+    </div>
+    <div><h4>Подросткам</h4><ul>
+      <li><a href="jobs.html">Вакансии</a></li>
+      <li><a href="register.html#teen">Регистрация</a></li>
+      <li><a href="profile.html">Мой профиль</a></li>
+      <li><a href="index.html#how">Как это работает</a></li></ul></div>
+    <div><h4>Работодателям</h4><ul>
+      <li><a href="employers.html#post">Разместить вакансию</a></li>
+      <li><a href="register.html#employer">Стать проверенным</a></li>
+      <li><a href="profile.html#employer">Кабинет работодателя</a></li></ul></div>
+    <div><h4>Помощь</h4><ul>
+      <li><a href="help.html">Частые вопросы</a></li>
+      <li><a data-tg href="https://t.me/teenjob_support">Написать в Telegram</a></li>
+      <li><a href="about.html">О проекте</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 TeenJob. Демо-версия студенческого проекта: вакансии, работодатели и платежи являются примерами и макетами.</span>
+    <nav aria-label="Правовая информация"><a href="safety.html">Безопасность</a><a href="about.html">О проекте</a></nav>
+  </div>
+</div></footer>
+<div class="modal" id="reg-modal" role="dialog" aria-modal="true" aria-labelledby="reg-title">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Закрыть">✕</button>
+    <h2 class="h2" id="reg-title">Кто ты?</h2>
+    <p class="muted">Выбери, и мы покажем нужную регистрацию.</p>
+    <div class="choice-grid">
+      <a class="choice" href="register.html#teen"><span class="big">🎒</span><b>Я ищу работу</b><span class="muted small">Мне 15–18 лет, хочу подработку</span></a>
+      <a class="choice" href="register.html#employer"><span class="big">🏪</span><b>Я работодатель</b><span class="muted small">Ищу ответственных подростков</span></a>
+    </div>
+    <p class="small muted mt">Уже есть профиль? <a href="login.html">Войти</a></p>
+  </div>
+</div>
+<a class="support-fab" href="help.html#chat" aria-label="Онлайн-помощь">💬 Помощь</a>
+<script src="script.js"></script>
+</body>
+</html>

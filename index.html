@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TeenJob: проверенная работа и подработка для подростков 15–18 лет. Проверяй условия, не плати за трудоустройство и береги личные данные.">
+  <meta name="theme-color" content="#6a3dff">
+  <title>TeenJob: подработка для подростков 15–18</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236a3dff'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">К содержимому</a>
+<div class="topbar"><div class="container">
+  <span class="tb-left">🔒 Ищи подработку с умом · Не плати за трудоустройство</span>
+  <span class="lang" aria-label="Язык сайта"><b>RU</b><span title="Скоро">КЫР</span></span>
+</div></div>
+<header class="site-header"><div class="container header-inner">
+  <a class="logo" href="index.html" aria-label="TeenJob, на главную"><span class="logo-mark">T</span><span>Teen<span class="t">Job</span></span></a>
+  <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-wrap">☰</button>
+  <div class="nav-wrap" id="nav-wrap">
+    <nav class="nav" aria-label="Основное меню"><a class="link" href="jobs.html">Вакансии</a><a class="link" href="employers.html">Работодателям</a><a class="link" href="safety.html">Безопасность</a><a class="link" href="about.html">О проекте</a><a class="link" href="help.html">Помощь</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost btn-sm" href="login.html">Войти</a>
+      <a class="btn btn-sm" href="register.html" data-register>Регистрация</a>
+      <a class="avatar-btn" href="profile.html" aria-label="Мой личный профиль" title="Мой профиль">👤</a>
+    </div>
+  </div>
+</div></header>
+<main id="main">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">✨ Первая работа без риска</span>
+      <h1>Тебе 15–18 и ты ищешь <em>подработку?</em></h1>
+      <p class="sub">Проверенные вакансии после уроков и в выходные. Оплата защищена, а твои данные видит только работодатель.</p>
+
+      <form class="search-card" action="jobs.html" method="get" role="search">
+        <div class="search-row">
+          <div class="field">
+            <label for="q">Что ищешь?</label>
+            <input id="q" name="q" type="search" list="suggest" placeholder="Курьер, кафе, онлайн…" autocomplete="off">
+            <datalist id="suggest"></datalist>
+          </div>
+          <div class="field"><label for="f-region">Регион</label><select id="f-region" name="region"></select></div>
+          <div class="field"><label for="f-type">Тип работы</label><select id="f-type" name="type"></select></div>
+          <div class="field"><label for="f-time">График</label><select id="f-time" name="time"></select></div>
+          <button class="btn btn-lg" type="submit">Найти</button>
+        </div>
+      </form>
+
+      <div class="chips" aria-label="Популярные запросы">
+        <span class="muted small">Популярное:</span>
+        <a class="chip" href="jobs.html?type=courier">🛵 Курьер</a>
+        <a class="chip" href="jobs.html?type=online">💻 Онлайн</a>
+        <a class="chip" href="jobs.html?time=weekend">📅 Выходные</a>
+        <a class="chip" href="jobs.html?time=afterschool">🎒 После уроков</a>
+        <a class="chip" href="jobs.html?pay=1000">💰 От 1 000 сом</a>
+      </div>
+
+      <div class="trust-row">
+        <span class="badge ok">✅ Все вакансии проверены</span>
+        <span class="badge">🔒 Данные видит только работодатель</span>
+        <span class="badge">💸 Оплата защищена</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-lg" href="register.html" data-register>Зарегистрироваться</a>
+        <a class="btn btn-ghost btn-lg" href="#how">Как это работает</a>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="phone">
+        <div class="phone-top"><b>TeenJob</b><span>🔔</span></div>
+        <div class="phone-search">🔎 Курьер, кафе, онлайн…</div>
+        <div class="mini-job"><span class="icon-bubble">🛵</span><div><b>Пеший курьер</b><small>900 сом · 4 ч</small></div><em>✅</em></div>
+        <div class="mini-job"><span class="icon-bubble">☕</span><div><b>Помощник в кафе</b><small>1 100 сом · 5 ч</small></div><em>✅</em></div>
+        <div class="mini-job"><span class="icon-bubble">💻</span><div><b>Оператор чата</b><small>700 сом · 3 ч</small></div><em>✅</em></div>
+        <div class="phone-btn">Откликнуться</div>
+      </div>
+      <div class="float-badge fb1">💸 Выплата в среду</div>
+      <div class="float-badge fb2">🔒 Данные скрыты</div>
+      <div class="float-badge fb3">📲 QR-код смены</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:10px 0 40px">
+  <div class="container">
+    <div class="facts-strip">
+      <div class="fs"><span class="icon-bubble">🎂</span><div><b>15–18 лет</b><span>Сначала проверь условия</span></div></div>
+      <div class="fs"><span class="icon-bubble">🛡</span><div><b>Безопасность</b><span>Проверь до отклика</span></div></div>
+      <div class="fs"><span class="icon-bubble">💸</span><div><b>Условия оплаты</b><span>Уточни до начала</span></div></div>
+      <div class="fs"><span class="icon-bubble">📅</span><div><b>Удобный график</b><span>Сверь с учёбой</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="container">
+    <h2 class="h2">Выбери, чем заняться</h2>
+    <p class="lead">Нажми на тип работы, и сайт покажет подходящие вакансии.</p>
+    <div class="cat-grid">
+      <a class="cat" href="jobs.html?type=courier"><span class="big">🛵</span>Курьер</a>
+      <a class="cat" href="jobs.html?type=cafe"><span class="big">☕</span>Кафе и кухня</a>
+      <a class="cat" href="jobs.html?type=shop"><span class="big">🛍</span>Магазин</a>
+      <a class="cat" href="jobs.html?type=promo"><span class="big">📣</span>Промоутер</a>
+      <a class="cat" href="jobs.html?type=online"><span class="big">💻</span>Онлайн</a>
+      <a class="cat" href="jobs.html?type=event"><span class="big">🎉</span>Мероприятия</a>
+      <a class="cat" href="jobs.html?type=help"><span class="big">📦</span>Помощь</a>
+      <a class="cat" href="jobs.html"><span class="big">🔎</span>Все вакансии</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <h2 class="h2">Свежие вакансии</h2>
+    <p class="lead">Здесь появятся объявления с источниками. Демо-примеры будут отмечены отдельно.</p>
+    <div class="grid g3" id="latest"></div>
+    <p class="mt"><a class="btn btn-ghost" href="jobs.html">Все вакансии →</a></p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <h2 class="h2">Как это работает</h2>
+    <p class="lead">Три шага от поиска до первой возможности.</p>
+    <div class="grid g3">
+      <div class="card"><div class="icon-bubble">🔎</div><h3>1. Найди</h3><p>Выбери регион, тип работы и удобный график. Фильтры помогут сузить поиск, но возрастные условия нужно проверить у работодателя.</p></div>
+      <div class="card"><div class="icon-bubble">🤝</div><h3>2. Откликнись</h3><p>Имя, возраст, телефон и фото. Работодатель увидит их только после твоего отклика.</p></div>
+      <div class="card"><div class="icon-bubble">💸</div><h3>3. Работай и получай</h3><p>Покажи QR-код в начале и в конце смены. Сразу уточни сумму, способ и дату выплаты до начала работы.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <h2 class="h2">Для кого TeenJob</h2>
+    <p class="lead">У каждого свой вход и свой личный профиль.</p>
+    <div class="grid g3">
+      <div class="card aud"><div class="icon-bubble">🎒</div><h3 style="margin-top:10px">Подросткам</h3>
+        <ul><li>Поиск возможностей для 15–18 лет</li><li>Фильтры по графику</li><li>Проверь возрастные требования</li></ul>
+        <a class="btn" href="register.html#teen">Найти подработку</a></div>
+      <div class="card aud"><div class="icon-bubble">🏪</div><h3 style="margin-top:10px">Работодателям</h3>
+        <ul><li>Понятная карточка вакансии</li><li>Чёткие обязанности и оплата</li><li>Соблюдение правил труда</li></ul>
+        <a class="btn" href="register.html#employer">Разместить вакансию</a></div>
+      <div class="card aud"><div class="icon-bubble">🤖</div><h3 style="margin-top:10px">Помощь и чат-бот</h3>
+        <ul><li>Подсказки для первой работы</li><li>Как распознать обман</li><li>Ответы про оплату и сайт</li></ul>
+        <a class="btn btn-ghost" href="help.html">Открыть помощь</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <h2 class="h2">Безопасность: наша главная работа</h2>
+    <p class="lead">Первая работа должна быть понятной, честной и безопасной.</p>
+    <div class="grid g4">
+      <div class="dark-card"><h3>🪪 Возраст</h3><p>Проверь законные условия трудоустройства для своего возраста.</p></div>
+      <div class="dark-card"><h3>🏪 Работодатель</h3><p>Уточни название, адрес, контакт и обязанности.</p></div>
+      <div class="dark-card"><h3>💸 Оплата</h3><p>Согласуй сумму, дату и способ выплаты письменно.</p></div>
+      <div class="dark-card"><h3>🔒 Приватность</h3><p>Не отправляй незнакомым людям пароли, коды и документы.</p></div>
+    </div>
+    <p class="mt"><a class="btn btn-white" href="safety.html">Подробнее о безопасности</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="container" style="max-width:820px">
+    <h2 class="h2">Быстрые ответы</h2>
+    <div class="faq mt">
+      <details><summary>Сколько стоит пользование сайтом?</summary><p>Для подростков сайт бесплатный.</p></details>
+      <details><summary>Нужно ли отправлять документы?</summary><p>Нет. Это демо-версия: не загружай паспорт, фото документов или другие личные файлы.</p></details>
+      <details><summary>Как узнать, когда заплатят?</summary><p>До начала работы уточни сумму, дату и способ оплаты. Демо-сайт не обрабатывает платежи.</p></details>
+    </div>
+    <p class="mt"><a href="help.html">Все вопросы и онлайн-помощь →</a></p>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-box">
+      <h2 class="h2" style="color:#fff">Готов к первой работе?</h2>
+      <p>Зарегистрируйся за пару минут. Выбери, ищешь ты работу или работников.</p>
+      <a class="btn btn-white btn-lg" href="register.html" data-register>Зарегистрироваться</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="container">
+  <div class="footer-cta">
+    <div><h3>Готов начать?</h3><p>Найди первую подработку или первых работников.</p></div>
+    <div class="cta-row"><a class="btn btn-white" href="jobs.html">Найти работу</a><a class="btn btn-ghost" style="color:#fff;border-color:#fff" href="register.html#employer">Я работодатель</a></div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><span class="logo-mark">T</span><span>Teen<span class="t" style="color:#b9a4ff">Job</span></span></a>
+      <p>Первая работа без риска. Подработка для подростков 15–18 лет. Проверяй условия и береги свои данные.</p>
+      <div class="social"><a data-tg href="https://t.me/teenjob_support">Telegram</a><a href="mailto:team@teenjob.example">Почта</a></div>
+    </div>
+    <div><h4>Подросткам</h4><ul>
+      <li><a href="jobs.html">Вакансии</a></li>
+      <li><a href="register.html#teen">Регистрация</a></li>
+      <li><a href="profile.html">Мой профиль</a></li>
+      <li><a href="index.html#how">Как это работает</a></li></ul></div>
+    <div><h4>Работодателям</h4><ul>
+      <li><a href="employers.html#post">Разместить вакансию</a></li>
+      <li><a href="register.html#employer">Стать проверенным</a></li>
+      <li><a href="profile.html#employer">Кабинет работодателя</a></li></ul></div>
+    <div><h4>Помощь</h4><ul>
+      <li><a href="help.html">Частые вопросы</a></li>
+      <li><a data-tg href="https://t.me/teenjob_support">Написать в Telegram</a></li>
+      <li><a href="about.html">О проекте</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 TeenJob. Демо-версия студенческого проекта: вакансии, работодатели и платежи являются примерами и макетами.</span>
+    <nav aria-label="Правовая информация"><a href="safety.html">Безопасность</a><a href="about.html">О проекте</a></nav>
+  </div>
+</div></footer>
+<div class="modal" id="reg-modal" role="dialog" aria-modal="true" aria-labelledby="reg-title">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Закрыть">✕</button>
+    <h2 class="h2" id="reg-title">Кто ты?</h2>
+    <p class="muted">Выбери, и мы покажем нужную регистрацию.</p>
+    <div class="choice-grid">
+      <a class="choice" href="register.html#teen"><span class="big">🎒</span><b>Я ищу работу</b><span class="muted small">Мне 15–18 лет, хочу подработку</span></a>
+      <a class="choice" href="register.html#employer"><span class="big">🏪</span><b>Я работодатель</b><span class="muted small">Ищу ответственных подростков</span></a>
+    </div>
+    <p class="small muted mt">Уже есть профиль? <a href="login.html">Войти</a></p>
+  </div>
+</div>
+<a class="support-fab" href="help.html#chat" aria-label="Онлайн-помощь">💬 Помощь</a>
+<script src="script.js"></script>
+</body>
+</html>
