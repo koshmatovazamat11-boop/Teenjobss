@@ -21,21 +21,22 @@ TeenJob wants to help solve this problem.
 
 # Main Features
 
-Job Search: Find different job opportunities.
+-
+- **Job Search:** Find different job opportunities.
 
-Search Filters: Choose jobs by city, type, age, and schedule.
+- **Search Filters:** Choose jobs by city, type, age, and schedule.
 
-Employer Page: A special page for employers.
+- **Employer Page:** A special page for employers.
 
-Registration and Login: Pages for user accounts.
+- **Registration and Login:** Pages for user accounts.
 
-Safety Tips: Learn how to stay safe when looking for a job.
+- **Safety Tips:** Learn how to stay safe when looking for a job.
 
-Help Chatbot: Get answers to simple questions.
+- **Help Chatbot:** Get answers to simple questions.
 
-Two Languages: Russian and Kyrgyz.
+- **Two Languages:** Russian and Kyrgyz.
 
-Mobile Friendly: Use the website on different devices.
+- **Mobile Friendly:** Use the website on different devices.
 
 
 # Technologies
@@ -64,21 +65,21 @@ Explore the website.
 
 # Future Plans
 
-We want to improve TeenJob in the future.
+ We want to improve TeenJob in the future.
 
-Our plans include:
+ Our plans include:
 
-Add a real database.
+- Add a real database.
 
-Create real user accounts.
+- Create real user accounts.
 
-Add more job opportunities.
+- Add more job opportunities.
 
-Check employers.
+- Check employers.
 
-Add a real messaging system.
+- Add a real messaging system.
 
-Improve website security.
+- Improve website security.
 
 
 # Project Status
