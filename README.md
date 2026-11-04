@@ -1,20 +1,87 @@
-# TeenJob — обновлённый демо-прототип
+TeenJob – Find Your First Job
 
-## Запуск
-1. Распакуйте архив.
-2. Откройте папку `Teebjob N1` в VS Code.
-3. Запустите `index.html` через Live Server.
+About the Project
 
-## Что улучшено
-- Добавлен `script.js`: мобильное меню, фильтры вакансий, сортировка, табы регистрации, проверка формы и локальный чат-бот.
-- На странице вакансий есть внешние объявления с оригинальными ссылками и пометка, что возрастные требования нужно уточнять.
-- Демо-примеры явно отделены от реальных внешних объявлений.
-- Добавлены варианты фильтров по региону, типу работы, графику, длительности, возрасту, источнику и минимальной оплате.
-- Страница помощи получила интерактивного rule-based чат-бота.
-- Удалён отдельный раздел для родителей; страница безопасности оставлена как памятка для самого соискателя.
-- Улучшена адаптация мобильного меню, форм, фильтров, карточек и чата.
+TeenJob is a website for teenagers aged 15–18.
 
-## Важно
-Это только фронтенд-прототип. Внешние объявления могут закрываться, а работодатели не проверены TeenJob. Фильтр возраста не подтверждает юридическую допустимость работы. Общий минимальный возраст трудоустройства в Кыргызстане — 16 лет; для 15-летних возможны предусмотренные законом исключения. Проверяйте актуальные правила и условия у официальных источников.
+The main goal of TeenJob is to help young people find their first job and earn money.
 
-Регистрация, SMS, вход, отклики, база вакансий, сообщения и платежи не подключены к серверу. Не вводите настоящие пароли и не загружайте личные документы в демо-формы.
+We want to make finding a job easier and safer for teenagers.
+
+Why Did We Create TeenJob?
+
+Many teenagers want to work, but they do not know where to find a job.
+
+Some young people also have problems finding safe jobs with a good schedule.
+
+TeenJob wants to help solve this problem.
+
+Main Features
+
+Job Search: Find different job opportunities.
+
+Search Filters: Choose jobs by city, type, age, and schedule.
+
+Employer Page: A special page for employers.
+
+Registration and Login: Pages for user accounts.
+
+Safety Tips: Learn how to stay safe when looking for a job.
+
+Help Chatbot: Get answers to simple questions.
+
+Two Languages: Russian and Kyrgyz.
+
+Mobile Friendly: Use the website on different devices.
+
+Technologies
+
+We used these technologies to build the website:
+
+HTML – to create website pages.
+
+CSS – to make the website look good.
+
+JavaScript – to add interactive features.
+
+GitHub Pages – to publish the website.
+
+How to Open the Project
+
+Download or clone the project from GitHub.
+
+Open the project folder.
+
+Open index.html in your browser.
+
+Explore the website.
+
+Future Plans
+
+We want to improve TeenJob in the future.
+
+Our plans include:
+
+Add a real database.
+
+Create real user accounts.
+
+Add more job opportunities.
+
+Check employers.
+
+Add a real messaging system.
+
+Improve website security.
+
+Project Status
+
+TeenJob is currently a demo project.
+
+Some features are examples and are not connected to a real database or payment system.
+
+Author
+
+Azamat Kushmatov
+
+Student Web Development Project – 2026.
